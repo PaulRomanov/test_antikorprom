@@ -21,9 +21,7 @@
 import { Content, fetchOneEntry, isPreviewing } from '@builder.io/sdk-vue';
 import { onMounted, ref } from 'vue';
 
-
 const content = ref(null);
-
 const apiKey = '01c2675efaec463c9d6212c7d6d0610a'; 
 const canShowContent = ref(false);
 const model = 'page';
@@ -41,5 +39,4 @@ onMounted(async () => {
 </script>
 
 <style>
-
 </style>
