@@ -8,6 +8,22 @@
         :content="content.data.description"
       />
     </Head>
+    <NTTCard
+      title="Пример карточки"
+      content="Это содержимое локально добавленной карточки. Вы можете изменить этот текст."
+      image="https://placehold.co/300x200/cccccc/000000?text=Изображение+карточки"
+    />
+
+    <NTTTable
+      data="Заголовок1,Заголовок2,Заголовок3\nДанные1,Данные2,Данные3\nЕщеДанные1,ЕщеДанные2,ЕщеДанные3"
+    />
+
+    <NTTNotes
+      notes="Это заметка номер один.\nВторая заметка здесь.\nИ последняя, третья заметка."
+    />
+
+    <hr style="margin: 20px 0;">
+    
     <div>Below is Builder Content:</div>
     <div v-if="canShowContent">
       <div>Page title: {{ content && content.data && content.data.title }}</div>
