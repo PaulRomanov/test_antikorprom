@@ -8,6 +8,9 @@
         :content="content.data.description"
       />
     </Head>
+
+    <h2>Локально добавленные компоненты:</h2>
+
     <NTTCard
       title="Пример карточки"
       content="Это содержимое локально добавленной карточки. Вы можете изменить этот текст."
@@ -22,12 +25,11 @@
       notes="Это заметка номер один.\nВторая заметка здесь.\nИ последняя, третья заметка."
     />
 
-    <hr style="margin: 20px 0;">
-    
+    <hr style="margin: 20px 0;"> 
+
     <div>Below is Builder Content:</div>
     <div v-if="canShowContent">
       <div>Page title: {{ content && content.data && content.data.title }}</div>
-
       <Content
         v-if="content"
         :model="model"
@@ -59,9 +61,6 @@ onMounted(async () => {
     const fetchedContent = await fetchOneEntry({
       model,
       apiKey,
-      userAttributes: {
-        urlPath: window.location.pathname,
-      },
     });
 
     console.log('Fetched content:', fetchedContent);
@@ -79,5 +78,4 @@ onMounted(async () => {
 </script>
 
 <style>
-
 </style>
