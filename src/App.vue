@@ -51,7 +51,7 @@ import { registeredComponents } from './builder-components';
 const content = ref(null);
 const apiKey = '01c2675efaec463c9d6212c7d6d0610a';
 const canShowContent = ref(false);
-const model = 'HomePage';
+const model = 'bff6d6c0bbed40a28f124d20d3477f98'; 
 
 const registeredBuilderComponents = ref(registeredComponents);
 
